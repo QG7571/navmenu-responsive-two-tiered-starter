@@ -16,13 +16,13 @@ function toggleMenu(){
         }
         else {
             dataDisplay();
-            setTimeout(toggleMenu(), 200);
+            setTimeout(toggleMenu, 200);
         }
     }
     else {
         navigationMenu.setAttribute("data-visible", "false");
         navButton.setAttribute("data-visible", "false");
-        setTimeout(toggleMenu(), 200);
+        setTimeout(dataDisplay, 200);
     }
 
     function dataDisplay() {
